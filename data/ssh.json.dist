@@ -1,0 +1,7 @@
+[
+    {
+        "file": "id_rsa",
+        "dropbox": "/Users/username/Dropbox/dotfiles/ssh/id_rsa",
+        "permissions": "600"
+    }
+]

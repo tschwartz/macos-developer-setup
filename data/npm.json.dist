@@ -1,0 +1,7 @@
+[
+    {
+        "dest": "/usr/local/bin",
+        "name": "n",
+        "bin": "n",
+        "keep": true
+]

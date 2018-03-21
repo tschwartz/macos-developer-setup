@@ -1,0 +1,18 @@
+{
+  "name": "macos-developer-setup",
+  "description": "A node module that aims to automate the setup of a developer's new laptop running macOS.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Tyler Schwartz <schwartz.tyler@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tschwartz/macos-developer-setup"
+  },
+  "bugs": {
+    "url": "https://github.com/tschwartz/macos-developer-setup/issues"
+  }
+}

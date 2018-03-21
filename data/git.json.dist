@@ -1,0 +1,10 @@
+[
+    {
+        "name": "repo-name",
+        "workspace": "/Users/username/dev/personal",
+        "origin": "git@github.com:tschwartz/repo-name.git",
+        "upstream": "git@github.com:org-name/repo-name.git",
+        "email": "schwartz.tyler@gmail.com",
+        "keep": true
+    }
+]
