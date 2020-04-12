@@ -20,9 +20,9 @@ const initTask = () => {
             const dest = folder.dest;
 
             if (!fs.existsSync(dest)) {
-                fs.mkdirSync(link);
+                fs.mkdirSync(dest);
             }
-            console.log(`Creating ${folder.dest}`);
+            console.log(`Creating ${dest}`);
 
         });
 

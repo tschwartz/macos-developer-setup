@@ -1,29 +1,29 @@
 const fs = require('fs');
 
 const initTask = () => {
-    const dataFile = './data/symlinks.json';
+    const dataFile = '/Users/tschwartz/.googledrive/macos-developer-setup/data/symlinks.json';
 
     fs.readFile(dataFile, (err, data) => {
         if (err) {
             return next(err);
         }
 
-        const symlinks = JSON.parse(data);
+        const symlinks = JSON.parse(data) || [];
 
-        console.log(`/**\n * Setting up symbolic links...\n */`)
+        console.log(`/**\n * Setting up ${symlinks.length} symbolic links...\n */`)
 
         symlinks.forEach(symlink => {
             const dest = symlink.dest;
             const link = `${dest}/${symlink.file}`;
-            const dropbox = symlink.dropbox;
+            const location = symlink.location;
 
             if (fs.existsSync(dest) && fs.existsSync(link)) {
                 fs.unlinkSync(link);
             }
 
-            if (fs.existsSync(dest) && !fs.existsSync(link) && fs.existsSync(dropbox)) {
+            if (fs.existsSync(dest) && !fs.existsSync(link) && fs.existsSync(location)) {
                 console.log(`Creating Symlink for ${link}`);
-                fs.symlinkSync(dropbox, link);
+                fs.symlinkSync(location, link);
             }
         });
 

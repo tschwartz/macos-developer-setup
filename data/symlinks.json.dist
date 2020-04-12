@@ -2,7 +2,7 @@
     {
         "dest": "/Users/username/",
         "file": ".bashrc",
-        "dropbox": "/Users/username/Dropbox/dotfiles/bash_profile",
+        "location": "/Users/username/.googledrive/dotfiles/bash_profile",
         "type": "file"
     }
 ]
